@@ -1,0 +1,58 @@
+public class HW1 {
+    public static void main(String[] args) {
+    int a =22;
+    int b =2;
+    int c =3;
+    int d =9;
+    int theSmallestOne = Math.min( Math.min(a,b), Math.min(c,d));
+    int theBigestOne = Math.max( Math.max(a,b), Math.max(c,d));
+        System.out.println("the samlest number is " + theSmallestOne);
+        System.out.println("the bigest number is " + theBigestOne );
+
+        int z = 150;
+        int x = 90;
+        int v = 10;
+        int w = 13;
+        int q = 194;
+        int min;
+        int max;
+        min = Math.min(z, Math.min(Math.min(x,v), Math.min(w,q)));
+        max = Math.max(z, Math.max(Math.max(x,v), Math.max(w,q)));
+        System.out.println(min);
+        System.out.println(max);
+
+        String name1 = "Yuliia";
+        String name2 = "yuliia";
+        String result;
+
+        if (name1.equalsIgnoreCase(name2)){
+           result= "Эти 2 человека тезки!";
+        }else
+            result= "Эти 2 человека НЕ являются тезками или имя написано с ошибкой!";
+        System.out.println(result);
+        String season;
+        int monthNum=11;
+
+    switch (monthNum){
+        case 12:
+        case 1:
+        case 2: season="winter";
+        break;
+        case 3:
+        case 4:
+        case 5: season="spring";
+        break;
+        case 6:
+        case 7:
+        case 8: season="summer";
+            break;
+        case 9:
+        case 10:
+        case 11: season="autumn";
+
+            System.out.println(season);
+
+    }
+
+    }
+}
